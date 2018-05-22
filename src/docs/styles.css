@@ -1,0 +1,107 @@
+body {
+  background: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+a {
+  color: #2cadcb;
+}
+
+.demo-header {
+  background: lightseagreen;
+  padding: 22px 11px;
+}
+
+.demo-header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  letter-spacing: 0.05em;
+}
+
+.demo-info {
+  background: khaki;
+  padding: 11px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.demo-info a {
+  color: tomato;
+  text-decoration: none;
+}
+
+.demo-info a:hover {
+  color: mediumslateblue;
+}
+
+.demo-footer {
+  color: rebeccapurple;
+  border-top: 1px solid #e0e0e0;
+  background: #e9e9e9;
+  margin: 0;
+  padding: 22px 11px;
+  text-align: center;
+}
+
+.id-cell {
+  color: #999;
+  display: inline-block;
+  padding: 6px;
+  font-size: 11px;
+  border-radius: 9px;
+  background: #e9e9e9;
+}
+
+.na-cell {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.my-custom-loader {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-custom-loader__inner {
+  padding: 22px;
+  padding-top: 100px;
+  margin: 22px;
+  border-radius: 11px;
+  border: 1px solid #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 6px 11px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-75px);
+  }
+}
+
+.my-custom-loader__ball {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: tomato;
+  animation-timing-function: ease-in-out;
+  animation: bounce 0.5s infinite alternate;
+}
